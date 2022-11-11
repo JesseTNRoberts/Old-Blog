@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+I write about research here. Fully developed ideas become papers. That's not the purpose of this.
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+This is to track and show progress. Ramblings, streams of consciousness, and other untumbled rocks live here.
