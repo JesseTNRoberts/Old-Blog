@@ -37,11 +37,13 @@ I also bet that GPT-2 won't be able to predict the author given something writte
 
 #### TweepFake: About detecting deepfake tweets
 
-So, this paper is related if you limit the space of possible authors to human and not-human. 
+This paper is related if you limit the space of possible authors to human and not-human. 
 
 They reference work done by GPT-2 engineers in which texts were labeled as human and non-human using zero shot learning. If the text was closer based on likelihood to machine recommended (I assume GPT-2 specifically) texts than human texts, then it was labeled as non-human. I'm not sure this is helpful.
 
-So, language models probably encode representations that are *rich enough* to predict things about the author.
+In general though, this paper says that RNN based models are better suited to classify the author of a tweet (in a binary author context) than larger language models based on their experiments. They theorize this may be because tweets don't need language model long range relationship representations. RNNs may be more appropriate in short text author identification.  
+
+So, the takeaway is language models probably encode representations that are *rich enough* to predict things about the author.
 
 
 
