@@ -1,0 +1,29 @@
+# Incidentals
+
+## The shed
+
+We're having a shed put in the backyard today. I had to prep the site yesterday in spare time. Now I'm waiting on the install crew to call me and let me know that they are on the way. So, overseeing that is the background task for the morning. Hopefully, I'll still be able to get some research done between the shed, faculty meeting, and research group meeting this afternoon. 
+
+## The gas
+
+Also, it seems that the gas crew will be at the house on Friday to install the gas stove and run the line out to the HVAC unit. So, I'll need to go get the black iron pipe between now and then. 
+
+I have already sized the pipe and the pressure. So, I'll need to cobble together a parts list (I'll put it here) and go to the hardware store.
+
+## Feedback on singoffs
+
+The capstone teams are using Github as a means of submitting detail designs. I have checked in with the githubs pull requests and checked the experimental results.
+
+# Research
+
+## Adapting Language Models for Non-Parallel Author-Stylized Rewriting - 2020
+
+In this paper the authors report on a method to adapt GPT-2 to produce stylistic similarities to specific authors. They compare their work to other similar methods to produce stylistic variations specific to known author corpi (fancy language that). 
+
+### Question - Does this suggest that language models internalize author specific information?
+
+Not necessarily. It suggests that they internalize all authors. Then the network can be biased toward a specific author's style. It does not necessarily suggest that the distance between text in a specific style is far in latent space from another style. 
+
+This suggests that not only is author ID via language model an open question, but that it may be an open question whether or not the pretrained representation has sufficient variance given a difference in style.
+
+
