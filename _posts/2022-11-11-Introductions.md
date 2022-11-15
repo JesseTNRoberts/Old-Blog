@@ -28,11 +28,11 @@ I'm switching to Seinfeld.
 
 ## Question - Do language models implicitly learn information about the author and style?
 
-My guess is this has been addressed in some fashion before. I am aware of GPT-2 based zero shot trivia tasks (presented in the Open AI paper introducing GPT-2). 
+My guess is this has been addressed in some fashion before. I am aware of GPT-2 based zero shot trivia tasks (presented in the Open AI paper introducing GPT-2). But, I'm guessing that GPT-2 won't be able to identify the author of common quotes. I also bet that GPT-2 won't be able to predict the author given something written in a stereotypical style. 
 
-Moreover, I am guessing that GPT-2 won't be able to identify the author of common quotes. 
+However, based on older research, I'm going to guess that pretrained models do have internal representations that could be used to the identify slower moving characteristics. 
 
-I also bet that GPT-2 won't be able to predict the author given something written in a stereotypical style. But let's see what's out there now..
+But let's see what's out there now..
 
 
 #### TweepFake: About detecting deepfake tweets
@@ -43,7 +43,16 @@ They reference work done by GPT-2 engineers in which texts were labeled as human
 
 In general though, this paper says that RNN based models are better suited to classify the author of a tweet (in a binary author context) than larger language models based on their experiments. They theorize this may be because tweets don't need language model long range relationship representations. RNNs may be more appropriate in short text author identification.  
 
-So, the takeaway is language models probably encode representations that are *rich enough* to predict things about the author.
+##### Relevant Takeaway
+
+So, the language models probably encode representations that are *rich enough* to predict things about the author. Otherwise, the LM based methods wouldn't have been able to predict machine or human author. 
+
+
+#### Enough for the first day of blogging
+
+This was a fairly successful method of blogging. Little effort is needed to make a post and enter the information. I think I'll stick with it.
+
+Since I am also remodeling the house and teaching full time, some posts may be about house remodels or teaching instead of research. However, my target is to post three times a week on research.
 
 
 
