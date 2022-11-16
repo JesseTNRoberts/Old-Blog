@@ -31,5 +31,12 @@ Thanks for the dataset! If it weren't for people like the authors of the above p
 
 I have identified a high level task, a hypothesis, and data. Now all I need is a method. 
 
+What I have in mind is
+- use prompt programming on GPT-3 to establish chiasm conceptual understanding in the GPT-3 pretrained model.
+- use fine tuning on BERT or GPT-2 to bias the pretrained model toward chiasm generation.
+- add an output layer and train GPT-2 or BERT end-to-end for 1 to 3 epochs to classify text as containing or not containing a chiasm.
+
+#### Running the experiments
+
 
 
