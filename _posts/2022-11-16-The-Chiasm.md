@@ -23,7 +23,7 @@ These language models have selective attention. They may not be able to identify
 
 #### What about data?
 
-
+The authors mentioned above have a link to a dataset they curated which contains true, borderline, and false chiasmi. The dataset can be found [here](http://stp.lingfil.uu.se/~marie/chiasme.htm).
 
 
 
