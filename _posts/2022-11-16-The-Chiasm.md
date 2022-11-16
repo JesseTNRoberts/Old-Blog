@@ -40,6 +40,11 @@ What I have in mind is
 
 Record scratch. Pause that thought. Because even though I have everything I need. GPT-3 is no longer the flagship language model from openAI. So, for the first experiment mentioned, I may need to move to their latest model. I will have to read the new paper to know.
 
+### But first, we feast
+
+Ran to get some groceries and lunch. I have decided to watch more closely what I am eating and have been using Lose it as a calorie and nutrient counter. I might start adding my meals to my daily post. Maybe, that might be distracting.
+
+Anyway, Garfield Thanksgiving and lunch done. Back to it.
 
 ### Training language models to follow instructions with human feedback - 2022
 
@@ -57,6 +62,12 @@ Question answered.
 
 InstructGPT seems to be more "aligned" the user base of openAI. The jury is still out on whether this will yield a better system for research. But it is certainly a better commercial product.
 
-### Resuming Experimentation
+### To class
+
+Capstone 2 is coming to an end very quickly. I am intensely proud of both teams. But I do feel that I have not been as present in capstone 2 as I would like. Formalizing and overseeing capstone 1 takes a significant amount of time. 
+
+However, at the end of the day, I have given them everything they need to succeed. It is up to them what they do with it. 
+
+### Back to the lab again
 
 
