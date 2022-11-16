@@ -27,5 +27,9 @@ The authors mentioned above have a link to a dataset they curated which contains
 
 Thanks for the dataset! If it weren't for people like the authors of the above paper, who are doing foundational research in the field of linguistics, computer scientists like me (not a linguist) couldn't contribute!
 
+#### Let's be specific 
+
+I have identified a high level task, a hypothesis, and data. Now all I need is a method. 
+
 
 
