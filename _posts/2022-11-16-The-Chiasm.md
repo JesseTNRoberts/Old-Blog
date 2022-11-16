@@ -38,5 +38,13 @@ What I have in mind is
 
 #### Running the experiments
 
+Record scratch. Pause that thought. Because even though I have everything I need. GPT-3 is no longer the flagship language model from openAI. So, for the first experiment mentioned, I may need to move to their latest model. I will have to read the new paper to know.
+
+
+### Training language models to follow instructions with human feedback - 2022
+
+The punchline is already given away. OpenAI has generated a newer language model called instructGPT. Apparently they layered on reinforcement learning to help the pretrained GPT-3 learn things that weren't helpful to say.
+
+
 
 
