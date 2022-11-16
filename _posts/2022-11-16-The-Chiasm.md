@@ -45,6 +45,18 @@ Record scratch. Pause that thought. Because even though I have everything I need
 
 The punchline is already given away. OpenAI has generated a newer language model called instructGPT. Apparently they layered on reinforcement learning to help the pretrained GPT-3 learn things that weren't helpful to say.
 
+An interesting note from the blurb on OpenAI's webpage says that instructGPT tends to "make up facts less often". That is interesting because the notion of making up a fact is an anthropomorphization. GPT-x does not make up facts. Based on the paper I talk about [here](https://jessetnroberts.github.io/2022/11/15/The-Shed.html) it seems that facts are just values selected by keys at a previous layer in the model. So, editing a fact is as simple as editing the right weights. However, they point out that this causes the language model to simply select another value from the abstracted part of speech. If this is the case, how can instructGPT prevent this? 
 
+Looking into it a bit more, it seems that the comment regarding making things up has more to do with closed domain questions (those where you answer questions about a passage). Then if a model introduces new (madeup) information, it is said to have hallucinated. 
+
+Anyway, that's interesting and all. But what I wanted to know is if I should use instructGPT or GPT-3. However, the OpenAI API has both available. So, it seems prudent to try chiasm generation on both. 
+
+Question answered. 
+
+#### Relevant Takeaway
+
+InstructGPT seems to be more "aligned" the user base of openAI. The jury is still out on whether this will yield a better system for research. But it is certainly a better commercial product.
+
+### Resuming Experimentation
 
 
