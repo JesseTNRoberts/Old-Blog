@@ -68,6 +68,5 @@ Capstone 2 is coming to an end very quickly. I am intensely proud of both teams.
 
 However, at the end of the day, I have given them everything they need to succeed. It is up to them what they do with it. 
 
-### Back to the lab again
 
 
