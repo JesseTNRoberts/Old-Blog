@@ -32,10 +32,13 @@ If you understand (or can learn quickly) electrial wiring (wire sizing, breaker 
 
 | HVAC Price Breakdown             | |
 |--------------------------------|--------------|
+|                                |              |
 | best quoted price              |  $11,000.00  |
 |--------------------------------|--------------|
+|                                |              |
 | Actual                         |              |
 |--------------------------------|--------------|
+|                                |              |
 | Goodman gas Package 2 ton unit |  $3,500.00   |
 | ducting                        |  $600.00     |
 | tape and tools                 |  $300.00     |
@@ -51,6 +54,7 @@ If you understand (or can learn quickly) electrial wiring (wire sizing, breaker 
 |                                |              |
 | total                          |  $6,825.00   |
 |--------------------------------|--------------|
+|                                |              |
 | saved                          |  $4,175.00   |
 | time spent                     | 50  hrs      |
 | my pay rate                    |  $83.50      |
