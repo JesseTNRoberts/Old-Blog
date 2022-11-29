@@ -1,4 +1,4 @@
-## Messing with GPT - 11/18
+## Messing with GPT and HVAC
 
 My goal for today is to get the hang of the API for GPT-3 or Interact-GPT and attempt zero shot chiasm generation. But I have several meetings throughout the day.
 
@@ -63,6 +63,8 @@ My goal is to work with the GPT interface for 1 hour and write on my game theory
 
 When those tasks are done, I will follow up with my collaborator on the ASEE papers.
 
-### Writing time
+### Writing
+
+
 
 
