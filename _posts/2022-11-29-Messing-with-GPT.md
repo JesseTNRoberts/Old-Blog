@@ -30,7 +30,7 @@ My typical rate of pay for engineering consultin is 80 dollars per hour. So, my 
 If you understand (or can learn quickly) electrial wiring (wire sizing, breaker sizing, and low voltage control wiring), duct sizing (cfm per square foot, duct cross section area for a given cfm rating), supply and return air layout, and basic sheet metal work then this is doable. But a critical mistake at any point along the way could be disastrous (starting with knowing what kind of unit and tonnage to purchase and from where). 
 
 
-| HVAC Price Breakdown             |
+| HVAC Price Breakdown             | |
 |--------------------------------|--------------|
 | best quoted price              |  $11,000.00  |
 |--------------------------------|--------------|
