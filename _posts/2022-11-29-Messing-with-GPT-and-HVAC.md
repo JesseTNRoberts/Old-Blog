@@ -15,7 +15,7 @@ Well, I haven't found it if they do. But I did find [this](https://openai.com/bl
 
 It turns out they do have subsidized research. But you have to signup first and then they give you the opportunity to apply for research subsidy. 
 
-### Reporting back - 11/29
+### Reporting back 
 
 That was a long pause. Thanksgiving was... less good than usual. But I attribute this to a lack of planning. Activity planning is a good way to make holidays more predictably fun. So, for Christmas I am determined to plan the time allocated-ish to games etc. I did make some good homemade, orange maple cranberry sauce and overall, a good time was had. 
 
