@@ -31,6 +31,7 @@ If you understand (or can learn quickly) electrial wiring (wire sizing, breaker 
 
 
 | HVAC Price Breakdown             | |
+|--------------------------------|--------------|
 |                                |              |
 | best quoted price              |  $11,000.00  |
 |                                |              |
