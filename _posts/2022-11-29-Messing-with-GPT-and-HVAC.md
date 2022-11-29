@@ -57,6 +57,10 @@ If you understand (or can learn quickly) electrial wiring (wire sizing, breaker 
 | my pay rate                    |  $83.50      |
 
 
-### Moving on - Writing
+## Today
 
-I need to play more with GPT. I have submitted a request to have subsidized access to the API. So, I will devote at least one hour today to playing with the GPT interface. But I will also be working on my paper on game theory. My goal is to spend an hour writing. 
+My goal is to work with the GPT inteface for 1 hour and write on my game theory paper for 1 hour. I have already asked for subsidized access to the GPT-3 API and am waiting on open-AI to respond. 
+
+### Writing time
+
+
