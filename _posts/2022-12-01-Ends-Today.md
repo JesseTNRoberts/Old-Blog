@@ -12,12 +12,16 @@ When those tasks are done, I will follow up with my collaborator on the ASEE pap
 
 The following results were obtained via few shot learning and the GPT-3 playground:
 
+Few shot training:
+
     ban with permit reservation to a permit with ban is a chiasm.
     citizen consumers rather than consumer citizens is a chiasm.
     Independence is language and language is independence is a chiasm.
 
     rules and laws and that laws and rules is not a chiasm.
     Directive is inapplicable in Denmark , or Denmark is required by the Directive is not a chiasm.
+
+testing: 
 
     man is not made for the law , but rather law is made for man is a chiasm.
 
