@@ -27,5 +27,6 @@ testing:
 
     tabled amendments , that is , amendments tabled is not a chiasm.
 
+The above testing was done by hand. So, the number of items used to test were small. However, this does give reason to believe that the model may already have an internal representation that is more than suitable to desegregate chiasma from non-chiasma. 
 
 
