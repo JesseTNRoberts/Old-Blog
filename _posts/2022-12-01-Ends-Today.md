@@ -8,7 +8,7 @@ My goal is to work with the GPT interface for 1 hour and write on my game theory
 
 When those tasks are done, I will follow up with my collaborator on the ASEE papers.
 
-## GPT
+## GPT-3 Chiasm Detection via Few Shot Learning
 
 The following results were obtained via few shot learning and the GPT-3 playground:
 
