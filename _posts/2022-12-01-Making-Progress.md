@@ -1,4 +1,4 @@
-## It Ends Today
+## Making Progress
 
 Today is the culminating project presentation for my capstone 2 students. So, a good deal of work for me happens next week in grading them. However, in the short term this gives me some additional time. 
 
