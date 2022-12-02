@@ -44,20 +44,22 @@ The above testing was done by hand. So, the number of items used to test were sm
 
 The prompt value was all words up to and including the final instance of the token "is" in each of the testing statements. 
 
-#### Few shot training methodology
+### How is few shot training done?
 
-The few shot learning method employed is based on converting the task to a cloze task (complete the sentence or fill in the blank). However, to do this it is helpful to provide the language model a hint as to how it should respond. The hint can be effectively provided in the form of an established pattern. 
+The few shot learning method employed for the test above is based on converting the task to a cloze test (complete the sentence or fill in the blank). However, to do this it is helpful to provide the language model a hint as to how it should respond. The hint can be effectively provided in the form of an established pattern. 
 
 This method bears a coincidental resemblance to the method discussed here:
-##### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference
+#### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference
 
 There are some very recent methods to perform few shot learning with fine tuning based on an idea called adapters. The notion of an adaptor is that a small set of parameters (like an additional fully connected layer) could be randomly initialized and inserted. These weights are then the only degrees of freedom in the network when it is finetuned. 
 
-##### Parameter-efficient transfer learning for nlp
+#### Parameter-efficient transfer learning for nlp
 
 The adapters suggested above and used for tuning a network should also be able to learn to *embed additional information* which may vary at frequencies different from typical tokens (like author information?). Further, combining this with the paper on [identifying counterfactual edits in PLMs](https://jessetnroberts.github.io/2022/11/15/The-Shed.html) could yield a good method to add information at the proper layer in a transformer language model.  
 
-##### PERFECT: Prompt-free and Efficient Few-shot Learning with Language Models
+
+
+
 
 
 
