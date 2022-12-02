@@ -29,6 +29,29 @@ testing:
 
 The above testing was done by hand. So, the number of items used to test were small. However, this does give reason to believe that the model may already have an internal representation that is more than suitable to desegregate chiasma from non-chiasma. 
 
+### Details of the above
+
+    response = openai.Completion.create(
+      model="text-davinci-003",
+      prompt="",
+      temperature=0,
+      max_tokens=6,
+      top_p=1,
+      frequency_penalty=0,
+      presence_penalty=0,
+      stop=["\n"]
+    )
+
+The prompt value was all words up to and including the final instance of the token "is" in each of the testing statements. 
+
+#### Few shot training methodology
+
+The few shot learning method employed is based on converting the task to a cloze task (complete the sentence or fill in the blank). However, to do this it is helpful to provide the language model a hint as to how it should respond. The hint can be effectively provided in the form of an established pattern. 
+
+This method bears a coincidental resemblance to the method discussed here:
+> Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference
+
+
 ## Scale it up
 
 The first thing that I need to do is to scale up the experiment in such a way that the results from past work can be compared. I think it best to run a comprehensive experiment and then log the data for analysis. 
@@ -50,3 +73,9 @@ It is theoretically true that given a network and a set of data, there is some o
 If it were possible to identify such a subset, then it would seem appropriat to distribute the training exemplar set with the network. 
 
 ### How are few shot learning systems typically evaluated?
+
+
+
+
+
+
