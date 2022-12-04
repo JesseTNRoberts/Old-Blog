@@ -72,9 +72,6 @@ It is theoretically true that given a network and a set of data, there is some o
 
 If it were possible to identify such a subset, then it would seem appropriat to distribute the training exemplar set with the network. 
 
-### How are few shot learning systems typically evaluated?
-
-
 
 
 
