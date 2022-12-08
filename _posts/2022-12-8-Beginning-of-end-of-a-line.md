@@ -6,9 +6,7 @@ However, I have found a compelling explanation for the phenomena which stems fro
 
 The typical analysis in game theory makes 2 key (but unintentional) assumptions. First, it assumes that the agents have infinite computational time and space. Second, it assumes that agents' algorithmic selection of a strategy happens at the end of execution. 
 
-When these assumptions are made explicit, they may be relaxed to evaluate the effect on the predicted equilibrium. Importantly, when computational time and space is no longer assumed infinite, and it is allowed that the agent themselves may be uncertain of afforded computational time, it is no longer tenable to assume that a preference algorithm would only provide output upon completion of execution. Rather, the algorithm would provide a continually updated best strategy.  
-
-The result is that stochastic computational space and time may cause agents to terminate before the algorithm converges.
+When these assumptions are made explicit, they may be relaxed to evaluate the effect on the predicted equilibrium. Importantly, when computational time and space is no longer assumed infinite, and it is allowed that the agent themselves may be uncertain of afforded computational time, it is no longer tenable to assume that a preference algorithm would only provide output upon completion of execution. Rather, the algorithm should provide a continually updated best strategy.  
 
 
 ## Hypothesis 1
@@ -16,6 +14,12 @@ The result is that stochastic computational space and time may cause agents to t
 This leads to the first hypothesis. In the interest of disambiguation, the claim *is not* if infinite time is given to a player, the Nash equilibrium will be selected. The hypothesis is that if a set of players had developed in societies with infinite and deterministic computational resources then those players would select the Nash equilibrium. 
 
 In the natural world, that is not the case. Humans (and strategic players in general) have limited computational resources and often have limited predictability regarding allocation. Therefore, they have optimized expectations of opponents based on these conditions. 
+
+### Question 1.1
+
+This leads to an interesting question: Can the uncertainty regarding the rejection of a weakly dominated strategy which is in the list of best outputs from the choice algorithm be related to the stochastic nature of the alotted computational time?
+
+Obviously, I developed fuzzy weak domination to describe this very scenario. FWD can be evaluated to develop likely numbers for the uncertainty. However, it would be more impactful if the two directions pointed to the same numbers. That is, if the evaluation of stochastic computational time and FWD suggested similar numbers for uncertainty.  
 
 
 ## Abstract Strategies: Meta Learning in Game Theory
@@ -43,6 +47,16 @@ Time constraint has been experimentally evaluated in previous work and has prove
 ### Prediction 3.2
 
 As an extension of the above, it is predicted that limiting the computational space by asking players to remember a number of items (which if forgotten cause the reward to be zero) while performing visual search is likely to cause players to tend toward focal points. 
+
+
+## Why is this important?
+
+First, the generic idea of the situation in the traveler's dilemma is as follows. A player is engaged in a game with a single Nash equilibria. The equilibrium is easily found via elimination of weakly dominated strategies, and each of the strategies is itself a sub-game focal point. 
+
+If AI are to interact strategically with humans in games (some of which will be similar to the situation here) then it is important for the AI to be able to efficiently predict strategic behavior. FWD, on the theoretical basis suggested here, is a method to anticipate how strategic players will perform elimination based reasoning. 
+
+
+
 
 
 
