@@ -6,13 +6,28 @@
 One of the questions around large language models is whether they can learn to include and exclude things with executive oversight based on an objective. The most prevalent mechanism for interacting with a language model is prompting. In this way, the prompt acts as a working memory for the objective. 
 
 - What do we know about ICL and how it works?
+
+
+
 - What are the requirements for the pretraining task? the representation? 
+
+
 - How does term frequency in the pretraining, term frequency in demonstration labels, and task to label distribution disjunction affect ICL?
+
+
 - Can ICL be used to for NLU beyond semantic structure? Can it be used for things which specifically depend on semantic structure? 
+
+
 - Can ICL infer and apply strict rules?
+
+
 - What is the status of ICL visualization and prompt based explanation?
 
+- <ins>Evaluate the attention placed on the prompt both for pretrained and finetuned models</ins>
 
+It seems that a finetuned model for classification should be more closely attending to the prompt than a model which is simply generating new text. The reasoning is that a generative model is focused on attending to the new text to create local coherence. This is not the case with a finetuned model. However, it is possible that in reality the pretrained model has just as much attention on the prompt until multiple tokens have been generated. 
+
+Perhaps this is the reason that MLM are better at NLU. They learn to attend very closely to the prompt with little self-attention. 
 
 #### Prompts across models
 
