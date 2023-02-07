@@ -45,6 +45,13 @@ One way that this could be assertained would be through second hand learning (so
 - Can these more slowly changing abstractions be used to achieve long term coherence in large texts?
 
 
+- Is there a means of measuring macro-coherence as well as micro-coherence? 
+
+Language models may trade prompt attention (attending to the objective) for attending to the micro-coherence of the generated response. As the response length grows, it may be harder to attend to both effectively (hence incorrect responses to the prompt in favor of semantic similarity based responses and errors in details in generated text). 
+
+Perhaps both could be attended to through abstractions.
+
+
 #### Attention is all you need... for open loop language generation (No Executive Control)
 
 Attention provides a mechanism for direct forward generation of text (causal LM) and for forward inference in NLU (MLM). However, it does not provide a mechanism for evaluation of the generated text in light of the objective and revision. This would constitute a type of closed loop control. 
