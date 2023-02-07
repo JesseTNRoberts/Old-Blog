@@ -15,7 +15,7 @@ One of the questions around large language models is whether they can learn to i
 - How does term frequency in the pretraining, term frequency in demonstration labels, and task to label distribution disjunction affect ICL?
 
 
-- Can ICL be used to for NLU beyond semantic structure? Can it be used for things which specifically depend on semantic structure? 
+- Can ICL be used to for NLU beyond semantic structure? Can it be used for things which specifically depend on semantic structure? Can it be used for things which specifically depend on syntactic structure?
 
 
 - Can ICL infer and apply strict rules?
