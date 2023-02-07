@@ -29,6 +29,11 @@ It seems that a finetuned model for classification should be more closely attend
 
 Perhaps this is the reason that MLM are better at NLU. They learn to attend very closely to the prompt with little self-attention. 
 
+- When local coherence is eroded and factual errors are made, is the mistake attributable to the attention? 
+
+If a language model attends to the prompt it may make errors regarding local coherence. Is it typical that local factual errors and local coherence errosion coincide with attention primarily on the prompt?
+
+
 #### Prompts across models
 
 - Are prompt/label pairs which are more successful on one model or class of models successful on other models and classes? (Does good on GPT-2 imply good on GPT-3? Does good on GPT-2 imply good on BERT?)
