@@ -27,7 +27,7 @@ One of the questions around large language models is whether they can learn to i
 
 Transformers work based on attention to prompt and the output from the decoder. 
 
-- (Answered) So, given attention can only be placed on the input and output of certain length, how can transformers generate long text and attend to the entirety?
+- (Answered) ~~So, given attention can only be placed on the input and output of certain length, how can transformers generate long text and attend to the entirety?~~
 
 The answer is simple. Currently, they can't. The max input and output length of GPT-3 is 2049 tokens (or about 1500 words). Many important texts are far longer than this. So, the limitation is fairly major. If we had powerful language models that were only built to generate short lengths of text, could these models be smaller and formed hierarchically to account for longer generation (ie generate an outline, then generate the text for each piece of the outline)? Another way of saying this is, could language models be trained to attend to information that changes at different rates (author changes more slowly, than topic, which changes more slowly than sentence meaning, which changes more slowly than the actual words).
 
@@ -56,7 +56,7 @@ Perhaps both could be attended to through abstractions.
 
 Attention provides a mechanism for direct forward generation of text (causal LM) and for forward inference in NLU (MLM). However, it does not provide a mechanism for evaluation of the generated text in light of the objective and revision. This would constitute a type of closed loop control. 
 
-##### **Idea**: Using an MLM to act as the feedback loop for a CLM in text generation in response to a prompt
+##### <ins>Idea: Using an MLM to act as the feedback loop for a CLM in text generation in response to a prompt</ins>
 
 MLMs are shown to be more well suited for NLU while CLMs tend to be more well suited for text generation. The idea then is simple, use a CLM for generation and after each generated token blank a number of previous tokens and ask the MLM to fill in the blanks based on the prompt and the generated text so far. Each of the actions (edit and concatentate) could be considered in series (with the MLM sometimes opting to change nothing) or both actions could be considered simultaneously with the chosen action being sampled from the overall logits.   
 
