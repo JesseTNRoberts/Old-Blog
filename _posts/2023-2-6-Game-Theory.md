@@ -2,7 +2,7 @@
 
 - Does the text generated from language models exhibit symptoms of ADD? Could this related to the attention on the prompt and working memory?
 
-## Finishing my game theory work
+## Finishing my work on the traveler's dilemma
 
 - In what contexts is iterative reasoning more evolutionarily stable than wholistic reasoning?
 - Show that iterative reasoning in non-deterministic computational time and space results in uncertainty regarding the weak domination of strategies
