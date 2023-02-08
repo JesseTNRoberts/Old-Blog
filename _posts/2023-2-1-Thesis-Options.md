@@ -1,12 +1,17 @@
 ## Developing My Thesis Topic: Executive function, abstractions, and working memory in language models
 
 
-### ICL Prompts as working memory
+### ICL Prompts and output as working memory
 
-One of the questions around large language models is whether they can learn to include and exclude things with executive oversight based on an objective. The most prevalent mechanism for interacting with a language model is prompting. In this way, the prompt acts as a working memory for the objective. 
+One of the questions around large language models is whether they can learn to include and exclude things with executive oversight based on an objective. 
+
+The most prevalent mechanism for interacting with a language model is prompting. In this way, the prompt acts as a working memory for the objective. Then the output from the model can also be considered working memory for verbal decomposition and reasoning. This is a very interesting perspective on working memory as it is reminiscent of Turing's early memory implementations which were simply resonant tubes which would "remember" the pressure wave, from one end of the tube to the other. Thereby, effectively implementing a delay. 
+
+This comparison may be telling. In the case of the Turing machine, the machine is able to read cells in the tape, write cells, and edit cells. Language models are currently only able to write and read cells. So, given an objective in working memory and some output from the language model, there is no ability to amend the working memory correct deviations away from the objective.
+
+A model that may be able to do this is described below which uses the strengths of CLM and MLM to achieve this. <ins> A way of systematically testing this would be to perturb the output of the model and evaluate subsequent decisions to either edit and correct the deviation or to continue generation.</ins>
 
 - What do we know about ICL and how it works?
-
 
 
 - What are the requirements for the pretraining task? the representation? 
