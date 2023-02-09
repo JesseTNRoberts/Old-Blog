@@ -13,6 +13,10 @@ This comparison may be telling. In the case of the Turing machine, the machine i
 
 A model that may be able to do this is described below which uses the strengths of CLM and MLM to achieve this. <ins> A way of systematically testing this would be to perturb the output of the model and evaluate subsequent decisions to either edit and correct the deviation or to continue generation.</ins>
 
+The introduction of abstractions is important to applying transformers to other more abstracted tasks (like narrative generation). Without the ability to manipulate abstracted narrative and expositional tokens, building a narrative will be too computationally expensive. Specifically, the rate of growth of parameters as compared to the input size is quadratic. Current technology would likely require more than a google $10 \cdot 10^100$ of parameters to attend to the number of necessary tokens. So, if each atom in the universe were a parameter, there still wouldn't be enough to write *The picture of Dorian Gray*.
+
+
+
 - What do we know about ICL and how it works?
 
 
@@ -97,10 +101,21 @@ Attention provides a mechanism for direct forward generation of text (causal LM)
 MLMs are shown to be more well suited for NLU while CLMs tend to be more well suited for text generation. The idea then is simple, use a CLM for generation and after each generated token blank a number of previous tokens and ask the MLM to fill in the blanks based on the prompt and the generated text so far. Each of the actions (edit and concatentate) could be considered in series (with the MLM sometimes opting to change nothing) or both actions could be considered simultaneously with the chosen action being sampled from the overall logits.   
 
 
+## Narrative to Narrative
+
+With the introduction of systems that are manipulating tokens in a hierarchical fashion while making use of transformers (AudioLM) it seems more an more possible to directly generate narrative tokens, followed by exposition tokens, and then finally textual tokens. 
+
+This is directly supported by the lines of research above which look to understand the inherent representation of abstracted information (topics, et al) and the effort to add executive function in the form of planning to language models. 
 
 
-## What sort of RNN/LM combinations have been attempted?
+## How human are Language models?
 
 It seems that humans have things in common with both LMs and RNNs. Humans don't have the ability to hold 2049 tokens in their working memory. However, it is not the case that they only intake a single token without working memory. 
+
+### Do they think like us?
+
+### Do they make mistakes like us?
+
+ADD 
 
 
