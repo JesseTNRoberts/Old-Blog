@@ -1,3 +1,5 @@
+# Language Models, rhetoric, narrative, and self talk
+
 ## Developing My Thesis Topic: Executive function, abstractions, and working memory in language models
 
 
