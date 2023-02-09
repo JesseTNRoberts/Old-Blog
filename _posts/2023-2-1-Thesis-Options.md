@@ -66,6 +66,14 @@ This question is really a piece of a greater question that is, can a language mo
 
 One way that this could be assertained would be through second hand learning (something I just made up). The idea is that language models learn so much that it may be possible to train a second model from the language model. By considering the last 7 words to be "working memory" and the tokens attended to  beyond this and their positions to be representative of the topic, a dataset of word to generate based on working memory and topic could be constructed! Also, we can infer the topic for the current token based on the long range dependency (maybe?). Then, a model could be trained that would accept a prompt, a topic or sequence of topics, and working memory to generate the next token.
 
+- Another way of asking the question immediately above is what frequency information is learned by transformed architectures?
+
+Consider that the author or topic is a value which changes slowly relative to words in the sequence. Another way to say this is the probability distribution over the values in the time varying sequence is dependent on the low frequency amplitude values. So, if one were to take the fourier tranform of the sequence, they would find that the low frequency amplitudes were correlated with certain time series values. 
+
+It is now obvious that transformers learn significant content about the time series and are very good at predicting next values. The question is, do they latently learn frequency transforms to make use of this slower changing bias?
+
+The problem is, I'm asking a question about the latent representational content. The only way I can see to actually address this would be to evaluate the latent space and look for patterns which seem to correlate with the desired signal. One way is to consider the current output word in a CLM to be the signal, and then look at the latent space for patterns. Post-hoc analysis of the generated text should yield topical information which could be used to look for signals in the latent representation that capture topic. Then as a follow-up, we could artificially adjust the latent representation to have activation more similar to the topics which have been identified to evaluate if this changes the likelihood of certain words. 
+
 
 - Can these more slowly changing abstractions be used to achieve long term coherence in large texts?
 
