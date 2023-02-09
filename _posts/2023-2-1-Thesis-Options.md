@@ -13,7 +13,7 @@ This comparison may be telling. In the case of the Turing machine, the machine i
 
 A model that may be able to do this is described below which uses the strengths of CLM and MLM to achieve this. <ins> A way of systematically testing this would be to perturb the output of the model and evaluate subsequent decisions to either edit and correct the deviation or to continue generation.</ins>
 
-The introduction of abstractions is important to applying transformers to other more abstracted tasks (like narrative generation). Without the ability to manipulate abstracted narrative and expositional tokens, building a narrative will be too computationally expensive. Specifically, the rate of growth of parameters as compared to the input size is quadratic. Current technology would likely require more than a google $10 \cdot 10^{100}$ of parameters to attend to the number of necessary tokens. So, if each atom in the universe were a parameter, there still wouldn't be enough to write *The picture of Dorian Gray*.
+The introduction of abstractions is important to applying transformers to other more abstracted tasks (like narrative generation). Without the ability to manipulate abstracted narrative and expositional tokens, building a narrative will be too computationally expensive. Specifically, the rate of growth of parameters as compared to the input size is quadratic. Current technology would likely require more than a google $10 \cdot 10^{100}$ of parameters to attend to the number of necessary tokens. So, if each atom in the universe were a parameter, there still wouldn't be enough to write *The Picture of Dorian Gray*.
 
 
 
