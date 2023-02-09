@@ -77,6 +77,7 @@ The problem is, I'm asking a question about the latent representational content.
 
 - Can these more slowly changing abstractions be used to achieve long term coherence in large texts?
 
+The answer here is that rhetorical writing and narrative writing definitely would benefit from this. In these the only important information is the rhetorical or narrative effect of surrounding sections and the intended rhetorical or narrative effect of the current section. 
 
 - Is there a means of measuring macro-coherence as well as micro-coherence? 
 
