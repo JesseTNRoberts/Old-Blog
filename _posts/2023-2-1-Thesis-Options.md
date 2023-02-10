@@ -99,6 +99,18 @@ Language models may trade prompt attention (attending to the objective) for atte
 Perhaps both could be attended to through abstractions.
 
 
+### What work has been done on long document NLU and NLP?
+
+#### Paper: Do Long-Range Language Models Actually Use Long-Range Context?
+
+In this paper the authors explore the information actually accessed and used in two types of long range attention models (local transformers and routing transformers). The benefit reported is somewhat predictable. Local transformers don't actually have long receptive fields, rather they are simply localized. Routing transformers cluster over things to which need to be attended. 
+
+The results show that perplexity is reduced only on tokens that are relatively infrequent. This should have been anticipated as tokens with higher frequencies will appear in shorter receptive fields.
+
+The idea here can be inherited from signal processing. The minimum sampling rate for a signal is twice the max frequency. A token that occurs with frequency k with k = 1/(mean tokens between samples) will only be guaranteed to be in the receptive field if the receptive field is at least 2/k tokens in size.
+
+So, unchanged perplexity on more frequent tokens should have been obvious. 
+
 #### Attention is all you need... for open loop language generation (No Executive Control)
 
 Attention provides a mechanism for direct forward generation of text (causal LM) and for forward inference in NLU (MLM). However, it does not provide a mechanism for evaluation of the generated text in light of the objective and revision. This would constitute a type of closed loop control. 
