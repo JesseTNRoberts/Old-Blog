@@ -101,6 +101,10 @@ Perhaps both could be attended to through abstractions.
 
 ### What work has been done on long document NLU and NLP?
 
+- How can experiments regarding potential models be conducted? 
+
+At scale train and test of a new transformer model can cost 10's of thousands of dollars. With that being the case, is there a reasonable method for creating and evaluating new models in a limited fashion? 
+
 #### Paper: Do Long-Range Language Models Actually Use Long-Range Context?
 
 In this paper the authors explore the information actually accessed and used in two types of long range attention models (local transformers and routing transformers). The benefit reported is somewhat predictable. Local transformers don't actually have long receptive fields, rather they are simply localized. Routing transformers cluster over things to which need to be attended. 
