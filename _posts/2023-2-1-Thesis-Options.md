@@ -118,9 +118,22 @@ So, unchanged perplexity on more frequent tokens should have been obvious.
 
 #### Paper: Efficient Content-Based Sparse Attention with Routing Transformers
 
+It is important to note that this work is only applicable to CLM.
+
 Looking into the paper referenced in the previous paper, it seems that routing transformers have been proposed by google. The underlying idea is content driven (context dependent) sparse attention. 
 
 From analysis contributed by other papers, it is clear that the benefit to perplexity is specific to those tokens which occur at lower frequencies. It begs the question, could attention heads be encouraged to attend to tokens that occur at different frequencies?
+
+The authors make the point that:
+
+> local attention sparsity variants are effective in practice since correlation between observations naturally decrease with time for many problems
+
+While this is the case, it is not generally true. Specifically, in narrative and rhetoric. Further, while it may be true that correlation dimenishes with temporal distance between tokens, it is not true that the correlation between lower frequency concepts like topic experience reduction. 
+
+Further, it seems appropriate to evaluate models along a measure that may be refered to as topical perplexity. This seems related to the task given to BERT where it was asked to declare whether a sentence was a successor or not. That is a very good idea. Hierarchically defined perplexity (or perplexity at varying time scales as opposed to only token - high frequency - level perplexity). 
+
+
+
 
 
 #### Attention is all you need... for open loop language generation (No Executive Control)
