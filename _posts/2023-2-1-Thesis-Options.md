@@ -111,6 +111,14 @@ The idea here can be inherited from signal processing. The minimum sampling rate
 
 So, unchanged perplexity on more frequent tokens should have been obvious. 
 
+
+#### Paper: Efficient Content-Based Sparse Attention with Routing Transformers
+
+Looking into the paper referenced in the previous paper, it seems that routing transformers have been proposed by google. The underlying idea is content driven (context dependent) sparse attention. 
+
+From analysis contributed by other papers, it is clear that the benefit to perplexity is specific to those tokens which occur at lower frequencies. It begs the question, could attention heads be encouraged to attend to tokens that occur at different frequencies?
+
+
 #### Attention is all you need... for open loop language generation (No Executive Control)
 
 Attention provides a mechanism for direct forward generation of text (causal LM) and for forward inference in NLU (MLM). However, it does not provide a mechanism for evaluation of the generated text in light of the objective and revision. This would constitute a type of closed loop control. 
