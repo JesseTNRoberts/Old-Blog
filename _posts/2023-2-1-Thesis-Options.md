@@ -4,6 +4,7 @@ The following are the general ideas/topics I have come up with
 - Inclusion and exclusion of information via executive function
 - Long range dependencies and coherence via abstractions and low frequency information
 - Using abstractions to manage attention
+- Using the prompt (or output or output as prompt) as working memory
 
 
 
