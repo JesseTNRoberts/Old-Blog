@@ -6,9 +6,17 @@ The following are the general ideas/topics I have come up with
 - Using abstractions to manage attention
 - Using the prompt (or output or output as prompt) as working memory
 
+Idea from Dr. Fisher:
+
+- Using an algorithm to do prompt engineering for experience management ala *Interactive Narrative:
+An Intelligent Systems Approach*
+
+This can be seen as a specific type of executive function in which the objective is more abstract and dynamic.
 
 
 ## Developing My Thesis Topic: Executive function, abstractions, and working memory in language models
+
+Consider this as a nugget: the need for language model control systems
 
 
 ### ICL Prompts and output as working memory
