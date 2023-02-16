@@ -1,4 +1,4 @@
-# Language Models, rhetoric, narrative, and self talk
+## Language Models, rhetoric, narrative, and self talk
 
 The following are the general ideas/topics I have come up with
 - Inclusion and exclusion of information via executive function
