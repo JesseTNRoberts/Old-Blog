@@ -60,6 +60,12 @@ Perhaps this is the reason that MLM are better at NLU. They learn to attend very
 
 If a language model attends to the prompt it may make errors regarding local coherence. Is it typical that local factual errors and local coherence errosion coincide with attention primarily on the prompt?
 
+#### Paper: Are Sixteen Heads Really Better than One?
+
+One of the results from this paper is that most attention heads in the multiheaded attention system are not necessary. Through ablation, the authors show that most heads can be removed without statistically significant effects on model fitness. 
+
+An interesting and notable exception to this is the cross attention layer between encoder and decoder. These attention heads have more dramatic and rapid effects on model fitness when ablated. This is somewhat predictable as attention heads here manage attending to generated text versus attending to the prompt. 
+
 
 #### Prompts across models
 
