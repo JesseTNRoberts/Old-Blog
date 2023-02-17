@@ -3,7 +3,7 @@
 The following are the general ideas/topics I have come up with
 - Inclusion and exclusion of information via executive function
 - Long range dependencies and coherence via abstractions and low frequency information
-- Using abstractions to manage attention
+- Using abstractions to manage attention (to facilitate external control via symbolic AI)
 - Using the prompt (or output or output as prompt) as working memory
 
 Idea from Dr. Fisher:
@@ -78,10 +78,13 @@ Transformers work based on attention to prompt and the output from the decoder.
 
 The answer is simple. Currently, they can't. The max input and output length of GPT-3 is 2049 tokens (or about 1500 words). Many important texts are far longer than this. So, the limitation is fairly major. If we had powerful language models that were only built to generate short lengths of text, could these models be smaller and formed hierarchically to account for longer generation (ie generate an outline, then generate the text for each piece of the outline)? Another way of saying this is, could language models be trained to attend to information that changes at different rates (author changes more slowly, than topic, which changes more slowly than sentence meaning, which changes more slowly than the actual words).
 
-- What is the relationship between input and output length, model fitness, and number of parameters? (if the model's power is primarily in the number of pararmeters without considering the size of the input and output, then decreased input and output is not useful)
+- (Answered) What is the relationship between input and output length, model fitness, and number of parameters? (if the model's power is primarily in the number of pararmeters without considering the size of the input and output, then decreased input and output is not useful)
 
+Current technology has a quadratic growth in number of parameters (as well as space and time complexity) with respect to the size of input. On the other hand, there is no theoretical relation between model size and perplexity. The intuitive hypothesis is that language models which accept longer inputs are able to better consider the context and predict words in light of this context. This is only a hypothesis. But it does seem to be readily testable. 
 
-This question is really a piece of a greater question that is, can a language model with a smaller input/output field be used with abstractions over more slowly changing information (author, topic, etc) to achieve similar results and thereby reduce the cost associated with training?
+The question here is, do language models with more parameters have lower perplexity because they are better able to consider the context? The null hypothesis is that language models with many parameters achieve lower perplexity because they have learned something which the smaller model has not. There must be some plateau beyond which no further improvement can be gained by model size. 
+
+This is persuasive to some degree as chatting is a specifically low context situation and it is what openAI seems to think is the best applicaion of GPT-3.
 
 
 - What resolutions of time varying information are captured by language models? (author, topic, rhetorical structure and intent, sentence meaning, words)
