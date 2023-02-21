@@ -14,13 +14,10 @@ A potential method for measuring familiarity would be to mask the surprising wor
 
 To achieve the above functionality, a MLM and CLM are used in conjunction. The idea behind this is that the notion of perplexity is well defined for CLM while that is not so for MLM. On the other hand, it seems that MLM may have a well defined notion of *understanding* as far as a lack of attentional volatility implies understanding, while this is not the case for CLM. 
 
-For the above method to be expected to work, the answer to an experimental question is needed:
-- Does volatile self-attention for a specific word imply perplexity regarding the word?
-
-
-Better idea:
+### Using KL divergence of the context to measure surprise given a word
 Perplexity suggests that the word, given the context, is surprising. This is a value that is specifically calculable for CLM. On the other hand, the KL-divergence of the context given the word (away from either a mask or a baseline word) suggests that the context, given the word, is surprising. Further, this is a value that is specifically calculable for MLM.
 
+This is actionable and could potentially be a measure of textual reward based on the surprised but expected notion. 
 
 ### Better than expected reward as a framework for aesthetic reward
 
