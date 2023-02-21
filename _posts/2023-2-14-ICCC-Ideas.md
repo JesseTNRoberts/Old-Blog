@@ -18,6 +18,10 @@ For the above method to be expected to work, the answer to an experimental quest
 - Does volatile self-attention for a specific word imply perplexity regarding the word?
 
 
+Better idea:
+Perplexity suggests that the word, given the context, is surprising. This is a value that is specifically calculable for CLM. On the other hand, the KL-divergence of the context given the word (away from either a mask or a baseline word) suggests that the context, given the word, is surprising. Further, this is a value that is specifically calculable for MLM.
+
+
 ### Better than expected reward as a framework for aesthetic reward
 
 This may already be something that has pervaded the ICCC communinity. However, I am not sure. A quick search should be conducted. 
