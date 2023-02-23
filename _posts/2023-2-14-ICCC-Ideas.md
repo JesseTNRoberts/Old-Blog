@@ -17,6 +17,8 @@ To achieve the above functionality, a MLM and CLM are used in conjunction. The i
 ### Using KL divergence of the context to measure surprise given a word
 Perplexity suggests that the word, given the context, is surprising. This is a value that is specifically calculable for CLM. On the other hand, the KL-divergence of the context given the word (away from either a mask or a baseline word) suggests that the context, given the word, is surprising. Further, this is a value that is specifically calculable for MLM.
 
+Another interpretation of the KL divergence used in this way is the context relevant information stored in a particular word. If a particular word affects a large change in context relevant information, it suggests that the language model does not "understand" the phrase as a whole. So, a phrase of words which are each somewhat perplexing but with no one word dominating the context may be pleasing aesthetically.
+
 This is actionable and could potentially be a measure of textual reward based on the surprised but expected notion. 
 
 ### Better than expected reward as a framework for aesthetic reward
