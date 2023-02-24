@@ -21,6 +21,12 @@ The answer is yes, decoder only/encoder only models differ on their masking prim
 
 Within this taxonomy, BERT is not a language model. 
 
+- Is there a good taxonomy and survey of NLP NLU transformer architectures? 
+
+This should not consider the obvious (parameters, layers, attention heads), instead it should consider the details of each model (residual connections, normalization, dimensionality of query vectors, attention sparsity). It should consider task suitability of the architecture (language modeling, denoising, summarization, generation, etc). Further, it should consider pre-training signals and tasks as well as the masking. 
+
+
+
 
 #### Factual Errors 
 
