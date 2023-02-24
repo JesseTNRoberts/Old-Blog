@@ -4,13 +4,25 @@ From the last set of ramblings about my thesis options it is clear that I need t
 
 ### Questions
 
+
+
+#### Architectural Details
+
+- What is the effect of the residual connection in cross attention coming from the decoder?
+
+- In encoder only models, I assume cross attention is eliminated as it is in decoder only models. However, this raises the question, is there actually a difference in encoder only/decoder only or is the deciding factor causal access to tokens? \
+
+This point is actually important because otherwise, the origin of keys, values, and queries in the decoder is left ambiguous.
+
 #### Factual Errors 
 
 - How are factual errors detected in text? 
 
 - When factual errors are made, is the mistake attributable to the attention?
 
-- - Does increased output or prompt length affect MIPS? Are errors more detectable in short text? If so, is this because the query vector is diluted?
+I think that this may be the case in CLMs. It could be the case that as text grows long, it dilutes the query vector.
+
+  - If so, are errors more detectable in short text? 
 
 
 
