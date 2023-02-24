@@ -10,9 +10,17 @@ From the last set of ramblings about my thesis options it is clear that I need t
 
 - What is the effect of the residual connection in cross attention coming from the decoder?
 
-- In encoder only models, I assume cross attention is eliminated as it is in decoder only models. However, this raises the question, is there actually a difference in encoder only/decoder only or is the deciding factor causal access to tokens? \
+In some architectures, the residual connection comes before layer normalization. 
+
+
+- In encoder only models, I assume cross attention is eliminated as it is in decoder only models. However, this raises the question, is there actually a difference in encoder only/decoder only or is the deciding factor causal access to tokens? 
 
 This point is actually important because otherwise, the origin of keys, values, and queries in the decoder is left ambiguous.
+
+The answer is yes, decoder only/encoder only models differ on their masking primarily. There's a good discussion on this in *Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer*. One of the things that is also apparent in their discussion is the limited meaning of language model. They consider language model to refer specifically to single stack transformers (regardless of encoder or decoder only, which is to say regardless of masking). In fact they go so far as to say that language models are limited to next token/word prediction models. ie. causality is incumbant upon language models. 
+
+Within this taxonomy, BERT is not a language model. 
+
 
 #### Factual Errors 
 
