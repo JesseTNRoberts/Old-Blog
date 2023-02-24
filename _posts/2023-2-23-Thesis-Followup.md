@@ -28,6 +28,7 @@ This should not consider the obvious (parameters, layers, attention heads), inst
 
 
 
+
 #### Factual Errors 
 
 - How are factual errors detected in text? 
@@ -98,7 +99,7 @@ Called contextual divergence
 
 - Generate and identify rhetorical structures (including chiasmi) via language model
 
-
+- The encoder of the generic architecture could be replaced with an algorith used to adjust the topic of generation enforced upon the encoder. (potential control system introduction)
 
 
 
