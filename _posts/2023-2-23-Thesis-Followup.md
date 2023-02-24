@@ -8,9 +8,9 @@ From the last set of ramblings about my thesis options it is clear that I need t
 
 - How are factual errors detected in text? 
 
-- When local coherence is eroded and factual errors are made, is the mistake attributable to the attention?
+- When factual errors are made, is the mistake attributable to the attention?
 
-- Does increased output or prompt length affect MIPS? Are errors more detectable in short text? If so, is this because the query vector is diluted?
+- - Does increased output or prompt length affect MIPS? Are errors more detectable in short text? If so, is this because the query vector is diluted?
 
 
 
