@@ -46,31 +46,31 @@ From the last set of ramblings about my thesis options it is clear that I need t
 
 #### Low frequency informational content
 
-What resolutions of time varying information are captured by language models? (author, topic, rhetorical structure and intent, sentence meaning, tokens)
+- What resolutions of time varying information are captured by language models? (author, topic, rhetorical structure and intent, sentence meaning, tokens)
 
-Can slower changing signals in the text be used to achieve long range coherence in narrative and rhetoric?
+- Can slower changing signals in the text be used to achieve long range coherence in narrative and rhetoric?
 
 
 #### Sparse attnetion, long range connections, and low frequency terms
 
-Are the results from bertology (Are sixteen heads really better than one?) consistent routing transformers?
+- Are the results from bertology (Are sixteen heads really better than one?) consistent routing transformers?
 
 
 
 
 ### Ideas
 
-#### MLM evaluation and revision of CLM generation
+- MLM evaluation and revision of CLM generation
 
-#### Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
+- Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
 
 Called contextual divergence
 
-#### Use a combination of MLM contextual divergence and CLM perplexity to evaluate textual interestingness 
+- Use a combination of MLM contextual divergence and CLM perplexity to evaluate textual interestingness 
 
-#### Correlation of errors with length of output, cross attention, and query dilution
+- Correlation of errors with length of output, cross attention, and query dilution
 
-#### Generate and identify rhetorical structures (including chiasmi) via language model
+- Generate and identify rhetorical structures (including chiasmi) via language model
 
 
 
