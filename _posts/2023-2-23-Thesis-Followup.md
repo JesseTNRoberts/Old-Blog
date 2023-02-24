@@ -27,6 +27,10 @@ This should not consider the obvious (parameters, layers, attention heads), inst
 
 
 
+- Is there a good review of the current state of large ablation studies for replicability? 
+
+Bertology has become common to an extent. However, the systematic study of transformer architectures does not seem to have an appropriate review available. 
+
 
 
 #### Factual Errors 
