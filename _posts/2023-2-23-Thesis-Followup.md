@@ -140,7 +140,7 @@ Called contextual divergence
 
 - Use a combination of MLM contextual divergence and CLM perplexity to evaluate textual interestingness 
 
-- Correlation of errors with length of output, cross attention, and query dilution
+- Correlation of errors with length of output attention dilution
 
 - Generate and identify rhetorical structures (including chiasmi) via language model
 
