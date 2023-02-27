@@ -11,6 +11,8 @@ From the last set of ramblings about my thesis options it is clear that I need t
 - (Answered) What is the effect of the residual connection in cross attention coming from the decoder?
 
 It forces the residual bias signal to have the statistics of the decoder rather than the encoder (which actually wouldn't change as the encoder input is typically fixed). So, as the generation progresses, the autoregressive decoder has shifting residual bias rather than a static bias from the encoder. 
+
+This is also the mechanism used for attentional blending (or whatever you call the summation and normalization of decoder self attention and cross-prompt attention). 
   
 - (Answered) What is the effect of the key and value vectors coming from the encoder?
 
@@ -22,7 +24,7 @@ So, cross attention in the traditional encoder architecture should be more corre
 
 Then the residual connection acts as a blending of attention on the prompt and generated output to achieve the next output. 
 
-This begs a subsequent question, why not also allow the question "given the prompt, how should we attend to the generated text?" To do this, another parallel cross attention layer would be needed in which the values come from the decoder and (perhaps) the residual connection from the encoder. I say perhaps, because it may still be beneficial to draw the residual from the decoder to have dynamic bias. The result of this would be cross-generative attention. 
+This begs a subsequent question, why not also allow the question "given the prompt, how should we attend to the generated text?" To do this, another parallel cross attention layer would be needed in which the values come from the decoder. The residual connection would still come from the decoder because the effect is attention blending. 
 
 
 
@@ -38,6 +40,14 @@ Within this taxonomy, BERT is not a language model.
 - How can transformer architectures be tested in a computationally tractable scenario such that success in the tractable implies the level of success at scale?
 
 Can transformer architectures be studied without spending hundreds of thousands of dollars to implement them at scale?
+
+
+- Is residual connection an effective means of attention blending? 
+
+Less work has been done using the full transformer architecture. More has been done using encoder or decoder only systems. Attention summation forces equal weight on both cross-prompt attention and decoder self-attention. So, in training, errors are not contextualized to be blaimed on the probable attentional origin. They are blaimed on both attention sources. I'm not sure if this is good, bad, or neither.
+
+
+#### Questions about the literature
 
 
 - Is there a good taxonomy and survey of NLP NLU transformer architectures? 
