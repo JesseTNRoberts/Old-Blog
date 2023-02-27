@@ -41,6 +41,10 @@ Within this taxonomy, BERT is not a language model.
 
 Can transformer architectures be studied without spending hundreds of thousands of dollars to implement them at scale?
 
+Obviously, for a test to be meaningful to large scale language application, the smaller testing language must have similar statistical structure to the target language. So, generic sequential data wouldn't prove generalizability. 
+
+
+
 
 - Is residual connection an effective means of attention blending? 
 
@@ -59,6 +63,10 @@ This should not consider the obvious (parameters, layers, attention heads), inst
 - Is there a good review of the current state of large ablation studies for replicability? 
 
 Bertology has become common to an extent. However, the systematic study of transformer architectures does not seem to have an appropriate review available. 
+
+
+- Has there been a study of relative scaled-down transformer models? 
+
 
 
 
