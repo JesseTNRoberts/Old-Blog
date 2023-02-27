@@ -6,28 +6,39 @@ From the last set of ramblings about my thesis options it is clear that I need t
 
 
 
-#### Architectural Details
+#### Architectural Details and Attention
 
 - (Answered) What is the effect of the residual connection in cross attention coming from the decoder?
 
 It forces the residual bias signal to have the statistics of the decoder rather than the encoder (which actually wouldn't change as the encoder input is typically fixed). So, as the generation progresses, the autoregressive decoder has shifting residual bias rather than a static bias from the encoder. 
   
-- Why should be the keys and values vectors come from the encoder?
+- (Answered) What is the effect of the key and value vectors coming from the encoder?
 
 Key and query vectors are identical in treatment. So, it would be no different to have the query vector come from the encoder. The keys and queries are used to select values (somewhat obvious). So, having either keys or queries come from the encoder allows the encoder to help guide selection. On the other hand, values coming from the encoder means that the encoder output is what is being attended to in cross attention. So, the architectural construction of the cross attention implies the question: 
 
 given the output, how should the prompt be attended to? 
 
+So, cross attention in the traditional encoder architecture should be more correctly referred to as cross-prompt attention. 
+
 Then the residual connection acts as a blending of attention on the prompt and generated output to achieve the next output. 
 
+This begs a subsequent question, why not also allow the question "given the prompt, how should we attend to the generated text?" To do this, another parallel cross attention layer would be needed in which the values come from the decoder and (perhaps) the residual connection from the encoder. I say perhaps, because it may still be beneficial to draw the residual from the decoder to have dynamic bias. The result of this would be cross-generative attention. 
 
-- In encoder only models, I assume cross attention is eliminated as it is in decoder only models. However, this raises the question, is there actually a difference in encoder only/decoder only or is the deciding factor causal access to tokens? 
+
+
+- (Answered) In encoder only models, I assume cross attention is eliminated as it is in decoder only models. However, this raises the question, is there actually a difference in encoder only/decoder only or is the deciding factor causal access to tokens? 
 
 This point is actually important because otherwise, the origin of keys, values, and queries in the decoder is left ambiguous.
 
 The answer is yes, decoder only/encoder only models differ on their masking primarily. There's a good discussion on this in *Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer*. One of the things that is also apparent in their discussion is the limited meaning of language model. They consider language model to refer specifically to single stack transformers (regardless of encoder or decoder only, which is to say regardless of masking). In fact they go so far as to say that language models are limited to next token/word prediction models. ie. causality is incumbant upon language models. 
 
 Within this taxonomy, BERT is not a language model. 
+
+
+- How can transformer architectures be tested in a computationally tractable scenario such that success in the tractable implies the level of success at scale?
+
+Can transformer architectures be studied without spending hundreds of thousands of dollars to implement them at scale?
+
 
 - Is there a good taxonomy and survey of NLP NLU transformer architectures? 
 
@@ -98,6 +109,8 @@ I think that this may be the case in CLMs. It could be the case that as text gro
 
 
 
+
+
 ___
 ### Ideas
 
@@ -113,8 +126,8 @@ Called contextual divergence
 
 - Generate and identify rhetorical structures (including chiasmi) via language model
 
-- The encoder of the generic architecture could be replaced with an algorith used to adjust the topic of generation enforced upon the encoder. (potential control system introduction)
+- The encoder of the generic architecture could be replaced with an algorithm used to adjust the topic of generation enforced upon the decoder. (potential control system connection point)
 
 
-
+- Implement cross-generative attention (described above)
 
