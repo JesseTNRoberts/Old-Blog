@@ -8,9 +8,17 @@ From the last set of ramblings about my thesis options it is clear that I need t
 
 #### Architectural Details
 
-- What is the effect of the residual connection in cross attention coming from the decoder?
+- (Answered) What is the effect of the residual connection in cross attention coming from the decoder?
 
-In some architectures, the residual connection comes before layer normalization. 
+It forces the residual bias signal to have the statistics of the decoder rather than the encoder (which actually wouldn't change as the encoder input is typically fixed). So, as the generation progresses, the autoregressive decoder has shifting residual bias rather than a static bias from the encoder. 
+  
+- Why should be the keys and values vectors come from the encoder?
+
+Key and query vectors are identical in treatment. So, it would be no different to have the query vector come from the encoder. The keys and queries are used to select values (somewhat obvious). So, having either keys or queries come from the encoder allows the encoder to help guide selection. On the other hand, values coming from the encoder means that the encoder output is what is being attended to in cross attention. So, the architectural construction of the cross attention implies the question: 
+
+given the output, how should the prompt be attended to? 
+
+Then the residual connection acts as a blending of attention on the prompt and generated output to achieve the next output. 
 
 
 - In encoder only models, I assume cross attention is eliminated as it is in decoder only models. However, this raises the question, is there actually a difference in encoder only/decoder only or is the deciding factor causal access to tokens? 
@@ -35,7 +43,9 @@ Bertology has become common to an extent. However, the systematic study of trans
 
 #### Factual Errors 
 
-- How are factual errors detected in text? 
+- From a MIPS perspective, what is a factual error?
+
+Factual correctness may require different attention than a conversational system. 
 
 - When factual errors are made, is the mistake attributable to the attention?
 
