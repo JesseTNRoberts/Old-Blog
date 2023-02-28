@@ -15,3 +15,10 @@ The goal is to fool humans such that (1) the semantic meaning is maintained, (2)
 - (Idea) The previous two ideas are combined in a feedback system so that the model obfuscates until prediction drops to the desired level. Then a task specific classifier is used to validate the model.
 
 
+### The Limitations of Stylometry for Detecting Machine-Generated Fake News
+
+Interesting but somewhat outdated paper in which the authors show that machine generated text can be detected through stylometry. Stylometry is also somewhat effective at detecting human generated fake news. However, transformer based, human in the loop generation of fake news can't be discerned stylometrically from legitimate content. They theorize that the cause is a lack of bias coming from a lack of hidden awareness of falsity (my words not theirs - but their concept).
+
+
+
+
