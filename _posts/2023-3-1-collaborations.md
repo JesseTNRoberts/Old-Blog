@@ -13,4 +13,6 @@ New architectures can inherit confidence from existing transformer models like c
 One way that this could be done would be to keep the global prompt and an ongoing summary of the generated text at the top of the buffer, but the rest of the buffer act as a FIFO. In this way, the model would continuously attend to the newest information while having abstracted representations of older generated text. It could even be that abstraction happens continuously. So, being further from the generated token means higher and higher entropy. In this way, all information stays in working memory. Though, very old things may have significantly unrecoverable information due to the level of compression. 
 
 
+## Thoughts on The Alignment Problem
 
+If Brian Christian is correct in his assessment that humans will never be able to hide unwanted information from an AI, that the AI will always "hear the shoes on the floorboards", then the answer seems simple. Pit Holmes against Holmes. For an individual with k protected classes, use adversarial learning to generate k versions of an individual such that 
