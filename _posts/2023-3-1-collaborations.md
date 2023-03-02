@@ -10,3 +10,7 @@ New architectures can inherit confidence from existing transformer models like c
 
 3. Can a decoder only transformer model be passed a prompt sufficiently to implement long term memory?
 
+One way that this could be done would be to keep the global prompt and an ongoing summary of the generated text at the top of the buffer, but the rest of the buffer act as a FIFO. In this way, the model would continuously attend to the newest information while having abstracted representations of older generated text. It could even be that abstraction happens continuously. So, being further from the generated token means higher and higher entropy. In this way, all information stays in working memory. Though, very old things may have significantly unrecoverable information due to the level of compression. 
+
+
+
