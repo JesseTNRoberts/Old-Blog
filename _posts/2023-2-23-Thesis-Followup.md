@@ -134,18 +134,32 @@ ___
 
 - MLM evaluation and revision of CLM generation
 
-- Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
+Type of closed loop control (a piece of executive function).
+Also, a type of computational critic.
+
+  - Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
 
 Called contextual divergence
 
-- Use a combination of MLM contextual divergence and CLM perplexity to evaluate textual interestingness 
+  - Use a combination of MLM contextual divergence and CLM perplexity to evaluate textual interestingness 
 
-- Correlation of errors with length of output attention dilution
 
 - Generate and identify rhetorical structures (including chiasmi) via language model
 
-- The encoder of the generic architecture could be replaced with an algorithm used to adjust the topic of generation enforced upon the decoder. (potential control system connection point)
+computational rhetorical criticism
+
+- Long narrative generation with experience control
+
+  - The encoder of the generic architecture could be replaced with an algorithm used to adjust the topic of generation enforced upon the decoder. (potential control system connection point)
+
+  - Use decoder only model and output buffer management (like asymptotically increasing entropy) to generate stories 
 
 
 - Implement cross-generative attention (described above)
+
+- Error detection and visualization
+
+- Attention Dilution may account for errors and topic loss
+
+- Add information to transformers by adding a database that is accessible via MIPs to augment and facilitate domain specific knowledge 
 
