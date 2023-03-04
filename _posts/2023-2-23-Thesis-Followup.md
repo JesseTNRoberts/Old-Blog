@@ -37,6 +37,19 @@ The answer is yes, decoder only/encoder only models differ on their masking prim
 Within this taxonomy, BERT is not a language model. 
 
 
+- Are decoder only models capable of being Turing Complete?
+
+##### On the Computational Power of Transformers and its Implications in Sequence Modeling
+
+The authors of the above paper, show that transformers are Turing complete. And they show that the residual connection from the decoder around the cross attention layer is necessary. Without the cross attention residual connection the transformer is not capable of being Turing complete. 
+
+##### Overcoming a Theoretical Limitation of Self-Attention
+
+In this paper the authors show that transformers are incapable of learning to recognize a parity language. The reason is because as the input string length grows large the cross entropy grows toward 1 such that classifying boolean strings as parity odd or even tends toward a random guess. 
+
+I believe the same thing occurs when transformers make factual errors. The cross entropy grows large and it becomes difficult to separate factual n-grams from incorrect n-grams. 
+
+
 - How can transformer architectures be tested in a computationally tractable scenario such that success in the tractable implies the level of success at scale?
 
 Can transformer architectures be studied without spending hundreds of thousands of dollars to implement them at scale?
@@ -162,4 +175,17 @@ computational rhetorical criticism
 - Attention Dilution may account for errors and topic loss
 
 - Add information to transformers by adding a database that is accessible via MIPs to augment and facilitate domain specific knowledge 
+
+#### Papers
+
+- ICLR paper on the Turing Completeness of Decoder only Transformer models 
+
+- Survey on what makes transformers work
+
+- AI Magazine article on transformers
+
+- Attention Dilution in transformers as a method to explore varying attention on preference relations 
+
+- upsampling representation of individuals in a population for fair selection (stylometric generation and computational social choice)
+
 
