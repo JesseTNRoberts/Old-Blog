@@ -180,6 +180,12 @@ computational rhetorical criticism
 
 - ICLR paper on the Turing Completeness of Decoder only Transformer models 
 
+Working on this this morning. I have convinced myself that it is reasonable to demonstrate. The demonstration is straightforward from previous work. Esstentially, the full transformer was shown to be Turing complete by showing that the transformer could simulate an RNN. However, the question of whether this would apply to a model like chatGPT was open until now. The reason is because language models use only the decoder portion of the model. 
+
+To show the decoder portion alone is Turing Complete, one only needs to show that the decoder only portion of the model can simulate the full transformer architecture, which has been shown to be capable of simulating an RNN, which is known to be capable of simulating any Turing Machine a la siegelmann and sonheim.
+
+The proof is made possible by multiheaded attention and learned sparsity/universal approximation in the feedforward network. 
+
 - Survey on what makes transformers work
 
 - AI Magazine article on transformers
