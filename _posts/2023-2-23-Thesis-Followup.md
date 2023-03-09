@@ -194,4 +194,5 @@ The proof is made possible by multiheaded attention and learned sparsity/univers
 
 - upsampling representation of individuals in a population for fair selection (stylometric generation and computational social choice)
 
+For any selection algorithm with any bias and any definition of fairness, there exists a semantically equivalent, fair transformation of the input data such that the end to end selection (with the transformation and selection algorithm) is fair. 
 
