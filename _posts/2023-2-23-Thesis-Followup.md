@@ -150,16 +150,19 @@ ___
 Type of closed loop control (a piece of executive function).
 Also, a type of computational critic.
 
-   - Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
-
-Called contextual divergence
 
   - Use a combination of MLM contextual divergence and CLM perplexity to evaluate textual interestingness 
 
 
-- Generate and identify rhetorical structures (including chiasmi) via language model
+- Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
+
+Called contextual divergence
+
+
+- Generate and identify rhetorical structures (including chiasmi) via transformer model
 
 computational rhetorical criticism
+
 
 - Long narrative generation with experience control
 
@@ -189,7 +192,9 @@ The proof is made possible by multiheaded attention and learned sparsity/univers
 
 - Survey on transformers 
 
-  - Need to find an angle. 
+  - Need to find an angle
+
+    - Narrative Generation
 
 - AI Magazine article: OpenAI isn't solving the alignment problem. They are applying an idiosyncratic censor.
 
