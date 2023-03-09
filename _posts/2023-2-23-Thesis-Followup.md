@@ -195,12 +195,14 @@ The proof is made possible by multiheaded attention and learned sparsity/univers
   - Need to find an angle
 
     - Narrative Generation
+    - Theoretic Understanding
+    - Scientific Understanding
 
 - AI Magazine article: OpenAI isn't solving the alignment problem. They are applying an idiosyncratic censor.
 
 This will eventually lead to problems. People trusting the system will be beguiled into a false sense of security. 
 
-- Attention Dilution in transformers as a method to explore varying attention on preference relations 
+- Attention Dilution in transformers as a method to explore the effect of varying attention on preference relations 
 
 - upsampling representation of individuals in a population for fair selection (stylometric generation and computational social choice)
 
