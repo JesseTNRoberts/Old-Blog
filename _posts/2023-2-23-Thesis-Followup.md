@@ -150,7 +150,7 @@ ___
 Type of closed loop control (a piece of executive function).
 Also, a type of computational critic.
 
-  - Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
+   - Measure MLM understanding of a word in context via context relevant information attributable to the word (via KL divergence)
 
 Called contextual divergence
 
@@ -170,11 +170,12 @@ computational rhetorical criticism
 
 - Implement cross-generative attention (described above)
 
-- Error detection and visualization
-
 - Attention Dilution may account for errors and topic loss
 
 - Add information to transformers by adding a database that is accessible via MIPs to augment and facilitate domain specific knowledge 
+
+- Successive Addition of Attention heads 
+
 
 #### Papers
 
@@ -186,9 +187,13 @@ To show the decoder portion alone is Turing Complete, one only needs to show tha
 
 The proof is made possible by multiheaded attention and learned sparsity/universal approximation in the feedforward network. 
 
-- Survey on what makes transformers work
+- Survey on transformers 
 
-- AI Magazine article on transformers
+  - Need to find an angle. 
+
+- AI Magazine article: OpenAI isn't solving the alignment problem. They are applying an idiosyncratic censor.
+
+This will eventually lead to problems. People trusting the system will be beguiled into a false sense of security. 
 
 - Attention Dilution in transformers as a method to explore varying attention on preference relations 
 
