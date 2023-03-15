@@ -182,13 +182,22 @@ computational rhetorical criticism
 
 #### Papers
 
-- ICLR paper on the Turing Completeness of Decoder only Transformer models 
+- paper on the Turing Completeness of Decoder only Transformer models 
 
 Working on this this morning. I have convinced myself that it is reasonable to demonstrate. The demonstration is straightforward from previous work. Esstentially, the full transformer was shown to be Turing complete by showing that the transformer could simulate an RNN. However, the question of whether this would apply to a model like chatGPT was open until now. The reason is because language models use only the decoder portion of the model. 
 
 To show the decoder portion alone is Turing Complete, one only needs to show that the decoder only portion of the model can simulate the full transformer architecture, which has been shown to be capable of simulating an RNN, which is known to be capable of simulating any Turing Machine a la siegelmann and sonheim.
 
 The proof is made possible by multiheaded attention and learned sparsity/universal approximation in the feedforward network. 
+
+The first attention head will isolate the prompt and serve it up as a vector that ends with the terminating character. This is done using the position of the terminating character. That position can be acquired by a concurrent attention head, fed to the FFN, and then encoded in $y_t$. This attention head serves to build the input vector to the encoder in the previous proof. 
+
+The second attention head will identify the position of the end prompt token ($). 
+
+The third attention head is an identity operator as is the case in the previous proof for the decoder. 
+
+In the second layer, there are two attention heads. One that is an identity operator for the position of the prompt end token and one that does the exact same thing as the cross attention head in the previous proof. 
+
 
 - Survey on transformers 
 
