@@ -198,6 +198,12 @@ The third attention head is an identity operator as is the case in the previous 
 
 In the second layer, there are two attention heads. One that is an identity operator for the position of the prompt end token and one that does the exact same thing as the cross attention head in the previous proof. 
 
+##### Important notes
+
+In the previous paper, they assume that the output vector can have arbitrary length. This is not the case in practice as the neural network would need to be arbitrarily large. 
+
+However, it is easy to show that in both the case of the transformer and the decoder only model, a sliding window on the output vector will result in complete RNN simulation as well. 
+
 
 - Survey on transformers 
 
