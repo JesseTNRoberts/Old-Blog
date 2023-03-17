@@ -15,7 +15,9 @@ Approach to proof: for any task which requires no auxillary computation squares 
 
 ### The importance of the delete function
 
-So, for a machine with restricted output form such that auxillary computation squares are not an option, the machine must possess a sufficient set of operations to perform the task. The sufficiency of the set is dependent upon the task. Therefore, for a non-erasing machine with any predefined set of operations to simulate a Turing machine, it must have unfettered access to auxilliary computation squares. 
+So, for a machine with restricted output form such that auxillary computation squares are not an option, the machine must possess a sufficient set of operations to perform the task. The sufficiency of the set is dependent upon the task. Therefore, for a non-erasing machine with any predefined set of operations to simulate a Turing machine, it must have unfettered access to auxilliary computation squares. Wang inversely states the same thing:
+
+> The generalization consists in the waiving of the restriction that the initial input and final output tape contents must be of certain preassigned forms which are taken according to an ad hoc convention...
 
 Therefore, a proof of Turing completeness which assumes an unrestricted output form where in practice the output is restricted without the presence of a delete or overwrite operation is insufficient to establish computational expressiveness. 
 
