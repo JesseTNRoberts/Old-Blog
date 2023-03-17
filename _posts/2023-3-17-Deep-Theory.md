@@ -23,7 +23,7 @@ Therefore, a proof of Turing completeness which assumes an unrestricted output f
 
 This shows explicitly the importance of the ability to delete when the format of the output is restricted.
 
-### Neural Networks Don't Learn to apply a set of operations
+### Neural Networks are non-algorithmic
 
 Neural networks are given both a computational problem and the form of the complete output. Thus, the algorithm does not infer how to use a predetermined set of operations and scratch space to achieve functionality as is the case when designing a program for a Turing machine. Rather, the neural network must learn a set of operations which is capable of generating the output without any auxillary computation squares. Typically, this is done by scaling up the dimensionality of the input into a latent space that permits direct computation. However, scaling up into higher dimensions is simply a way of saying, a domain specific set of operations is learned which is capable of computing the output without auxillary computation squares. 
 
