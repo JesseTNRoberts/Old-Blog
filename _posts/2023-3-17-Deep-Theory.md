@@ -1,0 +1,11 @@
+## Combining Encoder only and Deconder only architectures: Theoretically cooking with gas
+
+A transformer architecture which is composed of an appropriately trained pair of encoder-only and decoder-only modules such that the decoder is turing complete and the encoder is coopetively trained to compress the output will be more computationally powerful than the sum of the encoder and decoder parameters suggests. That is, the number of parameters needed to reach a certain functionality will be less for the theorized system, than the number of parameters needed in a decoder-only model. 
+
+The reasoning here is that, while non-erasing Turing machines are universal, they tend to consume significantly more tape (unproven) than an erasing Turing machine. Wang 1957 says that it is an open question whether a non-erasing Turing machine could use no additional space and only use four basic tape operations and remain computationally universal. It seems reasonable (unproven) that as the number of operations goes up, the number of additional spaces which must be consumed is reduced. A reasonable conclusion from this is to achieve desired functionality without operational artifacts (auxillary computation squares on the tape) the number of required operations is a function of the complexity of the task. 
+
+This is actually a reality for transformer systems like chatGPT. A common method for achieving more favorable results in the face of complex reasoning is to required the model to produce operational artifacts. While these models are very powerful, they simply have not inferred sufficiently specialized operations to accomplish these more complex tasks. That does not imply that they cannot be solved by the model at all, but that the network must use auxillary computation squares to compute the results of subtasks. Then the task can be solved by performing simpler operations across the subtasks.  
+
+So, if a system was desired which minimized auxillary computation squares, theoretically, a model which was formed using the a decoder only and ecoder only transformer architecture could do so while learning a smaller set of operations. Essentially, this would permit compression and deletion which (unproven) functionally decouple the number of number of operations from the length of tape consumed. 
+
+
