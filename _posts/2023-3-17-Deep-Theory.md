@@ -6,6 +6,12 @@ The reasoning here is that, while non-erasing Turing machines are universal, the
 
 This is actually a reality for transformer systems like chatGPT. A common method for achieving more favorable results in the face of complex reasoning is to required the model to produce operational artifacts. While these models are very powerful, they simply have not inferred sufficiently specialized operations to accomplish these more complex tasks. That does not imply that they cannot be solved by the model at all, but that the network must use auxillary computation squares to compute the results of subtasks. Then the task can be solved by performing simpler operations across the subtasks.  
 
-So, if a system was desired which minimized auxillary computation squares, theoretically, a model which was formed using the a decoder only and ecoder only transformer architecture could do so while learning a smaller set of operations. Essentially, this would permit compression and deletion which (unproven) functionally decouple the number of number of operations from the length of tape consumed. 
+So, if a system was desired which minimized auxillary computation squares, theoretically, a model which was formed using the a decoder only and ecoder only transformer architecture could do so without inflating the set of required (and largely idiosyncratic) operations. Essentially, this would permit compression and deletion which (unproven) functionally decouple the number of number of operations from the length of tape consumed. 
+
+
+Theory: For a non-erasing Turing Machine to consume no auxillary computation squares, it must possess a number of instructions which tends to infinity. 
+
+Approach to proof: for any task which requires no auxillary computation squares given a set of operations that does not include erasing or overwriting, there exists t' which requires at least one auxillary computation square. Further, for t' there exists a set of operations (not including erase or overwrite) which, if added, make t' computable without auxillary computation squares.
+
 
 
