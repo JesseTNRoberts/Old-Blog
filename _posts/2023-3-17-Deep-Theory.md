@@ -29,7 +29,7 @@ Neural networks are given both a computational problem and the form of the compl
 
 So, neural networks are precisely non-erasing Turing machines with restricted output format. It follows that neural networks may be computationally universal under assumptions which expect unrestricted output format and length. However, when restrictions are applied, an increasing set of operations are needed to perform an increasingly complex set of operations to actually perform compuational tasks. The result is a need for ever deeper neural networks which are capable of more and more operations. 
 
-
+To severe the link between number of learned operations, task complexity, and output form one must only allow a delete (or overwrite) operation be added. 
 
 
 
