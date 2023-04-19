@@ -27,3 +27,14 @@ The relationship is such that it is impossible for a network of defined size to 
 Assuming an algorithm exists which may inductively learn appropriate weights to encode an algorithm which will utilize the unbounded intermediate recursive calculations, we would prefer our network architecture be capable of implementing such an algorithm.  
 
 
+### Is the problem in training? 
+
+The problem is not in the training method. The problem is in the architecture. 
+
+Assuming that a training method existed which could infer the algorithm needed for any problem and encode the algorithm in a set of inputs, interpreting the output of the network as the output of the algorithm or even as an element of the output sequence provided by the algorithm prevents the network architecture from being capable of implementing all computable algorithms. 
+
+For the set of all computable algorithms to be implementable, an output is needed which is similar to the latent space of the network. That is, it is unconstrained by the user in terms of encoding and length. 
+
+Past work in _Turing universality of neural nets (revisited)_ showed that the elements (axioms) of partial recursive functions may be computed by an RNN. However, this only shows that a Turing complete RNN exists (similar to previous work) based on the fact that the elements needed to implement any partial recursive function are present and a Turing machine is a partial recursive function based on the fact that the class of functions which are Turing computable is equivalent to the class of partial recursive functions and a Turing machine can simulate any other Turing machine (therefore it iself belongs to the class of partial recursive functions). The point in this paper is that such a Turing complete RNN must have a latent output sequence. The latent output sequence may be embedded in the main output, however differentiation between final output and latent calculations is necessary for the output to be interpretable. 
+
+
