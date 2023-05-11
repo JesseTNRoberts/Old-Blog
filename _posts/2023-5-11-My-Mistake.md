@@ -22,4 +22,7 @@ We can actually go further. We can say that the minimum model dimension must be 
 
 In practice, some embeddings may be losslessly compressible. However, this is not guaranteed. 
 
+Now, in practice a decoder-only like transformer architecture is possible which may be Turing complete without this requirement. However, this would require that the output embedding not be equivalent to the input embedding. It would require the hidden state be more expressive than the input. 
+
+So, for the above requirements to not be violated and Turing completeness to be a possibility the size of vector must be at least twice the size of the embedding used to embed tokens. 
 
