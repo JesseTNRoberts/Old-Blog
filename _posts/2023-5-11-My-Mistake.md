@@ -7,4 +7,18 @@ The output of a decoder-only transformer is the output from the neural network i
 So, now that I realize this, the new proof construction is simpler. The model dimension is going to be the 2 times the embedding dimension plus two elements, one for the current time step and one for if the stop token has been seen. Then, one attention head will attend to the input while the other attends to the hidden state (last output) - this is true when the last vector is used to generate the last query. These attention heads are then concatenated. The order of concatenation is important. The last output has to be in the first part of the vector. Technically, the attention head attenting to the next input also has a 2 times multiplier also. This way, when the residual connection is applied both the input and the hidden state have a two times multiplier. Normalization returns them to the proper value. 
 
 
-It might be possible to do this with a single head.
+There are a number of transformer specific rules that are being observed:
+
+- The input embedding and output embedding must be the same 
+  - we can't have orthogonal input locations and output locations in the vector
+- The input dimension of the neural networks must be the same size as the model dimension
+  - This prevents us from bloating the input space to allow both the input and last output to be passed to the FFN
+  
+An interesting consequence of this is that, for a decoder-only transformer to be Turing complete, it must have dead space in the model dimension. That is, it must have space in the vector which is not used to house the embedding of the token. The reason is we fundamentally need to present both the last output and the current input to an FFN so that it can compute the next value in the sequence. This can't be guaranteed to be possible without deadspace.  
+
+Consider the null hypothesis - that we can present both the last output and the current input without deadspace in the embedding. Since there is no deadspace, every element in the vector is used to embed some piece of information about the token. Now, to present both the embedding for the input and the last output to the FFN (without violating the mentioned requirements) we must compress the input or the last output. Consider what happens when the embedding is very small, like a single bit. Compression is not possible. Therefore, we cannot be guaranteed to be capable of presenting both the current input and the last output.
+
+We can actually go further. We can say that the minimum model dimension must be greater than or equal to twice the size needed to house an embedded token. To see that this is the case, consider again the case where vectors contain only a single bit. 
+
+
+
