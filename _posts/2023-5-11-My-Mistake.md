@@ -20,5 +20,6 @@ Consider the null hypothesis - that we can present both the last output and the 
 
 We can actually go further. We can say that the minimum model dimension must be greater than or equal to twice the size needed to house an embedded token. To see that this is the case, consider again the case where vectors contain only a single bit. 
 
+In practice, some embeddings may be losslessly compressible. However, this is not guaranteed. 
 
 
