@@ -1,4 +1,4 @@
-## My Mistake
+## My Mistakes
 
 So, as it turns out, my construction for the Turing completeness of decoder-only transformer models is a bit off. However, it is readily fixable. The mistake was that I failed to realize what the output of the transformer would be. 
 
@@ -26,3 +26,10 @@ Now, in practice a decoder-only like transformer architecture is possible which 
 
 So, for the above requirements to not be violated and Turing completeness to be a possibility the size of vector must be at least twice the size of the embedding used to embed tokens. 
 
+### Second Mistake
+
+I forgot about the residual connection about the output of the FFN. So, the latch doesnt get to only force the outputs to zero. Instead it needs to invert them such that they sum with themselved to arrive at 0. 
+
+This problem is not present in the single layer formulation because the subsection of the network that implements this does not wind up with a residual connection. 
+
+Also, another way of dealing with this would be to again increase the size of the vector and simply move $x_t$ over in the vector so that the residual connection has no effect (what I'm doing at the attention residual connection). 
