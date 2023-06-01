@@ -18,3 +18,7 @@ ACL workshop on ancient language NLP
 
 EMNLP part of ACL anthology (abstract due June 16th)
 - https://2023.emnlp.org/calls/main_conference_papers/#important-dates
+
+
+Journal of language resources and evaluation
+- https://www.springer.com/journal/10579
