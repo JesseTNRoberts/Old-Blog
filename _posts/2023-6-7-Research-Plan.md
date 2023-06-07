@@ -12,3 +12,6 @@ On this foundation I will build work in
 4. ADHD 
   - Based in the work done regarding repetition as an important process for memory maintenance in transformers (and a possible connection to working memory in humans)
 
+
+Rather than being prescriptive regarding the order of things, I prefer to be agile and push where I'm motivated. However, I need to finish the paper regarding the lack of Turing completeness of models applied to seq-to-seq modeling.
+
