@@ -36,7 +36,7 @@ Absent a greater discourse or narrative, any substring may be completed in infin
 
 As an example, the authors of (ExpertPrompting: Instructing Large Language Models to be Distinguished Experts) develop a prompting scheme such that the probability space is biased to sound as if it is an expert. This dramatically changes the completion quality. 
 
-Obviously, this suggests that prompting is a viable method. 
+Obviously, this suggests that prompting is a viable method. However, this requires that we have a suitable prompt that captures the relevant discourse information to shift the probability space.
 
 Another method may be to expand the subtree of the narrative/discourse and then prune elements from the tree that deviate from the plan to a degree that makes the plan impossible. 
 
