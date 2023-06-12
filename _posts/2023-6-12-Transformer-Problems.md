@@ -2,8 +2,8 @@
 
 For each of the items below, two natural questions emerge. 
 
-*How can existing transformer based language models be used so that they may perform these? 
-*How can the transformer architecture be improved to perform these?
+*How can existing transformer based language models be used so that they may perform these?*
+*How can the transformer architecture be improved to perform these?*
 
 
 ### Computation
@@ -14,6 +14,7 @@ Based on my own work, transformer language models are not Turing complete as it 
 
 The solution must decouple not only the computational storage location but the number of computations from the output.
 
+There is evidence that suggests this could significantly improve the multistep reasoning of transformers. CoT. 
 
 ### Attention Strategies
 
