@@ -30,6 +30,8 @@ Currently, hyperopic attention is imfeasible for transformers as the length of t
 
 ### Plan Driven Sub-Space Sampling of a Language Model
 
+- Planning
+
 Absent a greater discourse or narrative, any substring may be completed in infinitely many ways as there are infinitely many discourses in which the substring may lie. How can the planned discourse or narrative be used to shape the probability space of the completion? 
 
 As an example, the authors of (ExpertPrompting: Instructing Large Language Models to be Distinguished Experts) develop a prompting scheme such that the probability space is biased to sound as if it is an expert. This dramatically changes the completion quality. 
