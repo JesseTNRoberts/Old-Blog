@@ -16,6 +16,8 @@ The solution must decouple not only the computational storage location but the n
 
 There is evidence that suggests this could significantly improve the multistep reasoning of transformers. CoT. 
 
+It seems the case that an additional "tape" would solve this issue. Two tape transformers! With internal and external dialogues! I bet there is good theoretical backing for this. I bet a 2 tape B machine is capable of generating recreating the tape of an arbitrary Turing machine. 
+
 ### Attention Strategies
 
 - Myopic Attention
